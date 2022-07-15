@@ -1,0 +1,23 @@
+/*#root, html, body {
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	background-color: whitesmoke;
+}*/
+
+*{
+	margin: 0;
+	padding:  0;
+	box-sizing: border-box;
+
+}
+#root{
+	box-sizing: border-box;
+	background-color: #F7F1F8;
+}
+/*
+html {
+	scroll-behavior: smooth;
+}*/
