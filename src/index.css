@@ -9,15 +9,13 @@ body {
 
 *{
 	margin: 0;
-	padding:  0;
+	padding: 0;
 	box-sizing: border-box;
-
 }
 #root{
 	box-sizing: border-box;
-	background-color: #F7F1F8;
+	background-color: #161616;
 }
-/*
 html {
 	scroll-behavior: smooth;
-}*/
+}

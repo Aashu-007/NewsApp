@@ -91,7 +91,6 @@ const CategoryPage = () => {
 						})}
 						{loadmore <= totalResults && (
 							<>
-								<hr />
 								<Button
 									sx={{ m: "auto", mt: 3 }}
 									variant="contained"
