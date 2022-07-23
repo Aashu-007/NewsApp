@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link, useLocation } from "react-router-dom";
 
+
 const CardCategory = ({
 	urlToImage,
 	title,
@@ -15,6 +16,8 @@ const CardCategory = ({
 	url,
 	category,
 	maxWidth,
+	minWidth,
+	minHeight,
 	maxHeight,
 	descH,
 	mT,
@@ -25,10 +28,11 @@ const CardCategory = ({
 		<>
 			<Card
 				sx={{
-					m: 2,
+					m:2,
 					maxWidth: { maxWidth },
-					minWidth: 260,
+					minWidth: {minWidth},
 					maxHeight: { maxHeight },
+					minHeight:{minHeight},
 					borderRadius: 2,
 				}}
 				raised
@@ -45,13 +49,14 @@ const CardCategory = ({
 							gutterBottom
 							variant="body1"
 							component="div"
+							sx={{textAlign: 'justify'}}
 						>
 							{title ? title.substr(0, 100) : ""}
 						</Typography>
 						<Typography
 							variant="body2"
 							color="text.secondary"
-							sx={{ wordWrap: "break-word" }}
+							sx={{ wordWrap: "break-word", textAlign: 'justify'}}
 						>
 							{description ? description : ""}
 						</Typography>

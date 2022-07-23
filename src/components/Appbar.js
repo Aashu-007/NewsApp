@@ -7,12 +7,10 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
-import { Link, useLocation } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Pages = [
   {
@@ -66,9 +64,13 @@ const ResponsiveAppBar = () => {
               fontFamily: "monospace",
               fontWeight: 700,
             }}
+
           >
           <Link to="/" style={{color: "inherit",
-              textDecoration: "none",}}>
+              textDecoration: "none",}}
+              onClick={() => {
+                      window.scroll(0, 0);
+                    }}>
             ANN NEWS
           </Link>
           </Typography>
@@ -134,7 +136,10 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Link to="/" style={{color: "inherit",
-              textDecoration: "none",}}>
+              textDecoration: "none",}}
+              onClick={() => {
+                      window.scroll(0, 0);
+                    }}>
             ANN NEWS
           </Link>
           </Typography>

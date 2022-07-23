@@ -26,6 +26,7 @@ const Homepage = () => {
 											url={data.url}
 											category={data.category}
 											maxWidth={260}
+											minWidth={260}
 											maxHeight={350}
 										/>
 									</Grid>
