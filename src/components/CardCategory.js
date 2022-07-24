@@ -43,6 +43,7 @@ const CardCategory = ({
 						alt="news"
 						height="180"
 						image={urlToImage}
+						loading="lazy"
 					/>
 					<CardContent sx={{ height: descH }}>
 						<Typography

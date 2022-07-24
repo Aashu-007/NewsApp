@@ -5,10 +5,11 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import { useTheme } from '@mui/material/styles';
+import CircularProgress from '@mui/material/CircularProgress';
+import {motion} from 'framer-motion';
 
 const CategoryPage = () => {
-	const theme = useTheme();
+	const [loading, setLoading] = useState(false)
 	const [loadmore, setLoadmore] = useState(9);
 	const queryParams = new URLSearchParams(useLocation().search);
 	const category = queryParams.get("name");
@@ -30,18 +31,28 @@ const CategoryPage = () => {
 	}
 
 	useEffect(() => {
+		setLoading(true);
 		getArticles();
-	}, [API_URL])
+		setLoading(false);
+	}, [API_URL,loading])
 
 
 	return (
 		<>
-			<Container disableGutters maxWidth="100%" sx={{px:1,py:3}}>
-				<Box
+			<Container disableGutters maxWidth="100%" height="100vh" sx={{px:1,py:3}}>
 
+
+				<Box
 					component="main"
 					sx={{ flexGrow: 1, justifyContent: "center", }}
 				>
+				{loading ? 
+						(
+							<Box sx={{display:"flex",justifyContent:"center",maxWidth:"500",mt:"25vh"}}>
+								<CircularProgress color="success" />
+							</Box>
+						):
+						(<>
 					<Grid container spacing={5}>
 						{datas.map((data, index) => {
 							return (
@@ -53,6 +64,10 @@ const CategoryPage = () => {
 										md={6}
 										sm={6}
 										lg={4}
+									>
+									<motion.div
+										initial={{y: "-80px", opacity: 0}}
+										animate={{y: 0,opacity: 1}}
 									>
 										<CardCategory
 											key={index}
@@ -77,6 +92,7 @@ const CategoryPage = () => {
 											descH={220}
 											mT={2.5}
 										/>
+									</motion.div>
 									</Grid>
 								</>
 							);
@@ -93,6 +109,7 @@ const CategoryPage = () => {
 							</div>
 						)}
 					</Grid>
+					</>)}
 				</Box>
 			</Container>
 		</>

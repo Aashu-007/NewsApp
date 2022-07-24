@@ -18,8 +18,8 @@ const Pages = [
     path: "/",
   },
   {
-    text: "Latest News",
-    path: "/latest",
+    text: "Trending News",
+    path: "/category?name=trending",
   },
   {
     text: "About",
@@ -68,9 +68,7 @@ const ResponsiveAppBar = () => {
           >
           <Link to="/" style={{color: "inherit",
               textDecoration: "none",}}
-              onClick={() => {
-                      window.scroll(0, 0);
-                    }}>
+              >
             ANN NEWS
           </Link>
           </Typography>
@@ -109,9 +107,7 @@ const ResponsiveAppBar = () => {
                   <Link
                     to={page.path}
                     style={{ textDecoration: "inherit", color: "inherit" }}
-                    onClick={() => {
-                      window.scroll(0, 0);
-                    }}
+                    
                   >
                     <Typography textAlign="center">{page.text}</Typography>
                   </Link>
@@ -137,9 +133,7 @@ const ResponsiveAppBar = () => {
           >
             <Link to="/" style={{color: "inherit",
               textDecoration: "none",}}
-              onClick={() => {
-                      window.scroll(0, 0);
-                    }}>
+             >
             ANN NEWS
           </Link>
           </Typography>
@@ -153,9 +147,7 @@ const ResponsiveAppBar = () => {
                 <Link
                   to={page.path}
                   style={{ textDecoration: "inherit", color: "inherit" }}
-                  onClick={() => {
-                    window.scroll(0, 0);
-                  }}
+                  
                 >
                   {page.text}
                 </Link>
