@@ -66,7 +66,7 @@ const Category = [
 	{
 		title: "Automobile",
 		urlToImage:
-			"https://firebasestorage.googleapis.com/v0/b/mpis-mini-f6271.appspot.com/o/automobile.jpg?alt=media&token=daff9614-c8a3-404e-bd0d-27780198159c",
+			"https://firebasestorage.googleapis.com/v0/b/mpis-mini-f6271.appspot.com/o/automobile.jpg?alt=media&token=ab7e03a6-07dc-4d24-9814-2215a6db30ea",
 		description:
 			"latest cars, advance technology of automobile industry.",
 		category: "automobile",
@@ -74,7 +74,7 @@ const Category = [
 	{
 		title: "Education",
 		urlToImage:
-			"https://firebasestorage.googleapis.com/v0/b/mpis-mini-f6271.appspot.com/o/automobile.jpg?alt=media&token=daff9614-c8a3-404e-bd0d-27780198159c",
+			"https://firebasestorage.googleapis.com/v0/b/mpis-mini-f6271.appspot.com/o/education.jpg?alt=media&token=3380bb32-8a65-4fe0-bc41-f233a811a6bf",
 		description:
 			"Latest education news, analysis on colleges, universities etc.",
 		category: "education",
@@ -82,7 +82,7 @@ const Category = [
 	{
 		title: "Fashion",
 		urlToImage:
-			"https://firebasestorage.googleapis.com/v0/b/mpis-mini-f6271.appspot.com/o/automobile.jpg?alt=media&token=daff9614-c8a3-404e-bd0d-27780198159c",
+			"https://firebasestorage.googleapis.com/v0/b/mpis-mini-f6271.appspot.com/o/fashion.jpg?alt=media&token=2876f292-fb6a-4b0a-9c19-19024406ff12",
 		description:
 			"latest fashion news, beauty coverage, celebrity style etc.",
 		category: "fashion",

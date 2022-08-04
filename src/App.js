@@ -12,7 +12,7 @@ import alanBtn from "@alan-ai/alan-sdk-web";
 const App = () => {
   useEffect(() => {
     alanBtn({
-      key: "fd5b30a910c1767c84158692cca8e02d2e956eca572e1d8b807a3e2338fdd0dc/stage",
+      key: "17443b896f405a15aabba874dbf9b37e2e956eca572e1d8b807a3e2338fdd0dc/stage",
       onCommand: (commandData) => {
         if (commandData.command === "go:back") {
           // Call the client code that will react to the received command
